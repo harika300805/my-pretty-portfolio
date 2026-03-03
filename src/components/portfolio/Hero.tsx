@@ -22,8 +22,8 @@ const Hero = () => {
 
         {/* Bio */}
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10">
-          I craft sleek web apps with the MERN stack and turn ideas into real, impactful products.
-          <span className="text-foreground"> Clean UI, solid logic, zero excuses.</span> Always leveling up.
+          Building the future, one clean commit at a time.
+          <span className="text-foreground"> Full-stack developer with a sharp eye for UI and a strong grip on logic.</span> I turn complex problems into smooth, scalable web experiences. Less talk. More build.
         </p>
 
         {/* Social Links */}
