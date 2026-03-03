@@ -4,8 +4,8 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient">
       {/* Ambient background blobs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-10" style={{ background: 'hsl(168 70% 55%)' }} />
-      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full blur-3xl opacity-8" style={{ background: 'hsl(260 60% 55%)' }} />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-10" style={{ background: 'hsl(43 90% 58%)' }} />
+      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full blur-3xl opacity-5" style={{ background: 'hsl(224 50% 30%)' }} />
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Tag */}
