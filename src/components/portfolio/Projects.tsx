@@ -7,6 +7,7 @@ const projects = [
     tags: ["React", "JavaScript", "TailwindCSS"],
     emoji: "🚌",
     github: "https://github.com/harika300805",
+    demo: "https://crowdfree-commute.vercel.app/",
   },
   {
     title: "Image Processing Suite",
@@ -21,6 +22,7 @@ const projects = [
     tags: ["MongoDB", "Express", "React", "Node.js"],
     emoji: "🏙️",
     github: "https://github.com/harika300805",
+    demo: "https://sihfinal2025.vercel.app/",
   },
 ];
 
@@ -62,15 +64,28 @@ const Projects = () => {
               </div>
 
               {/* Links */}
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Github className="w-3.5 h-3.5" />
-                View on GitHub
-              </a>
+              <div className="flex items-center gap-4">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Github className="w-3.5 h-3.5" />
+                  View on GitHub
+                </a>
+                {'demo' in project && (project as typeof project & { demo: string }).demo && (
+                  <a
+                    href={(project as typeof project & { demo: string }).demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs text-primary hover:text-primary/80 transition-colors font-medium"
+                  >
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    Live Demo
+                  </a>
+                )}
+              </div>
             </div>
           ))}
         </div>
