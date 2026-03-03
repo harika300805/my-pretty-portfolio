@@ -13,6 +13,13 @@ const langSkills = [
   { name: "C++", icon: "⚙️" },
 ];
 
+const toolSkills = [
+  { name: "Git", icon: "🌿" },
+  { name: "GitHub", icon: "🐙" },
+  { name: "VS Code", icon: "💻" },
+  { name: "Jupyter", icon: "📓" },
+];
+
 const SkillBadge = ({ name, icon }: { name: string; icon: string }) => (
   <div className="flex items-center gap-2.5 px-4 py-3 rounded-xl border border-border bg-secondary/50 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 group cursor-default">
     <span className="text-lg">{icon}</span>
@@ -45,6 +52,17 @@ const Skills = () => {
             <h3 className="text-xs font-semibold text-muted-foreground tracking-widest uppercase mb-5">Programming Languages</h3>
             <div className="flex flex-wrap gap-3">
               {langSkills.map((skill) => (
+                <SkillBadge key={skill.name} {...skill} />
+              ))}
+            </div>
+          </div>
+
+          <div className="w-full h-px bg-border" />
+
+          <div>
+            <h3 className="text-xs font-semibold text-muted-foreground tracking-widest uppercase mb-5">Tools & Environment</h3>
+            <div className="flex flex-wrap gap-3">
+              {toolSkills.map((skill) => (
                 <SkillBadge key={skill.name} {...skill} />
               ))}
             </div>
